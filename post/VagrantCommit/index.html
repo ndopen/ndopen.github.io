@@ -1,8 +1,8 @@
 <html>
   <head>
-  <meta charset="utf-8" />
+    <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>标签列表 | 脏乱差的小舍</title>
+<title>vagrant 命令查询 | 脏乱差的小舍</title>
 <meta name="description" content="点滴技术汇聚知识流" />
 <link rel="shortcut icon" href="https://ndopen.github.io/favicon.ico">
 <link rel="stylesheet" href="https://ndopen.github.io/styles/main.css">
@@ -14,11 +14,18 @@
 <script src="https://ndopen.github.io/media/js/view-image.min.js"></script>
 <script src="https://ndopen.github.io/media/js/jquery.magnific-popup.min.js"></script>
 <script src="https://ndopen.github.io/media/js/functions.js"></script>
+    <meta name="referrer" content="never">
+    <meta name="description" content="常用命令列表
+vagrant init        # 初始化
+vagrant up          # 启动虚拟机
+vagrant halt        # 关闭虚拟机
+vagrant reload      # 重启虚拟机
+vag..." />
+    <meta name="keywords" content="vagrant,commit" />
+    <script src="https://ndopen.github.io/media/js/waterfall.min.js"></script>
+    <script src="https://ndopen.github.io/media/js/prism.min.js"></script>
   </head>
   <body>
-    <!-- start: #wrapper -->
-    <div class="wrapper">
-      
             <header id="header" class="grid-container">
         <!-- start: .menu-wrapper -->
         <div class="menu-mobile"> 
@@ -85,28 +92,109 @@
         </div>
       </div>
 
-      <main id="tags" class="main fullcover no-sidebar content">
-        <div class="grid-container module-wrapper enable-masonry aos-init aos-animate" data-aos="fade-up">
+      <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
+
+        <div class="center content">
+          <div class="featured-image cover" style="background-image: url('data:image/png;base64,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');">
+            <div class="meta top"> 
+              <time class="meta-info" style="float:left;" datetime="2020-04-24"><i class="fa fa-calendar"></i><span class="lately">4 分钟前</span></time>
+              
+            </div>
+            <div class="info">
+              <div class="tags ">
+                
+                      <a href="https://ndopen.github.io/tag/qJ2cqPwkd/" class="ctag ctag-0 ctag-qJ2cqPwkd" aria-label="">vagrant</a>
+                    
+                      <a href="https://ndopen.github.io/tag/11TamN-JCP/" class="ctag ctag-1 ctag-11TamN-JCP" aria-label="">commit</a>
+                    
+              </div>
+              <h1 class="title ularge white bold">vagrant 命令查询</h1>
+            </div>
+          </div>
+        </div>  
+
         <div class="epcl-page-wrapper">
-          <div class="left-content grid-70 np-mobile widget_epcl_related_articles">
+          <div class="left-content grid-70 np-mobile">
+            <article class="main-article post">
+              <section class="post-content">
+                <div class="text">
+                  <h3 id="常用命令列表">常用命令列表</h3>
+<pre><code class="language-shell">vagrant init        # 初始化
+vagrant up          # 启动虚拟机
+vagrant halt        # 关闭虚拟机
+vagrant reload      # 重启虚拟机
+vagrant ssh         # SSH 至虚拟机
+vagrant status      # 查看虚拟机运行状态
+vagrant destroy     # 销毁当前虚拟机
 
-          <div class="widget_tag_cloud tagcloud">
-            
-              <a href="https://ndopen.github.io/tag/qJ2cqPwkd/" class="ctag ctag-0 ctag-qJ2cqPwkd" aria-label="">vagrant</a>
-            
-              <a href="https://ndopen.github.io/tag/11TamN-JCP/" class="ctag ctag-1 ctag-11TamN-JCP" aria-label="">commit</a>
-            
-              <a href="https://ndopen.github.io/tag/g-807bnHa/" class="ctag ctag-2 ctag-g-807bnHa" aria-label="">Gridea</a>
-            
-          </div>
-        </div>
+vagrant suspend         # 挂起当前虚拟机
+vagrant resume          # 恢复被挂起的vm
+vagrant box list        # 列出所有box列表
 
-        </div>
+vagrant box remove {base name}  # 删除
+
+vagrant destroy         # 停止当前正在运行的虚拟机并销毁所有创建的资源
+vagrant package         # 把当前的运行的虚拟机环境进行打包，可用于分发开发环境
+vagrant plugin          # 安装卸载插件
+vagrant provision       # 设置基本的环境，进一步设置可以使用Chef/Puppet进行搭建
+vagrant ssh-config      # 输出ssh连接的一些信息
+vagrant status          # 获取虚拟机状态
+vagrant version         # 获取vagrant的版本
+</code></pre>
+<h3 id="下载vagrant-box源的两种方法">下载vagrant box源的两种方法</h3>
+<ol>
+<li>拼接下载链接</li>
+</ol>
+<pre><code class="language-shell">https://app.vagrantup.com/ubuntu/boxes/trusty64/versions/20190514.0.0/providers/virtualbox.box
+</code></pre>
+<p>下载速度在150k/s左右</p>
+<ol start="2">
+<li>使用清华源</li>
+</ol>
+<pre><code class="language-shell">vagrant box add \https://mirrors.tuna.tsinghua.edu.cn/ubuntu-cloud-images/bionic/current/bionic-server-cloudimg-amd64-vagrant.box \--name ubuntu/bionic
+</code></pre>
+<p>下载速度在1500k/s左右</p>
+
+                </div>
+                <div class="clear"></div>
+              </section>
+            </article>
+            <div class="clear"></div>
+
+            <section class="related section">
+              
+              
+              <article class="next grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://ndopen.github.io/post-images/hello-gridea.png');"></div>
+                 <a href="https://ndopen.github.io/post/hello-gridea/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2018-12-12">2018-12-12</time>
+                  <h4 class="title white no-margin">Hello Gridea</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://ndopen.github.io/media/images/right-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+
+                <div class="clear"></div>
+            </section>
+
+              <div class="clear"></div>
+              
+            
+              <div id="comments" class="bg-white hosted ">
+                <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
+              </div>
+              <div class="clear"></div>
+            
+
+            </div>
           </div>
-        </div>
       </main>
 
-        <footer id="footer" class="grid-container">
+          <footer id="footer" class="grid-container">
         <div class="widgets row gradient-effect">
             <div class="default-sidebar border-effect">
               <div class="grid-33 tablet-grid-50 mobile-grid-100">
@@ -226,6 +314,9 @@
     <div class="clear"></div>
 
         
+
+      
+    <script src="https://ndopen.github.io/media/js/functions-post.js"></script>
 
     </div>
     <!-- end: #wrapper -->
