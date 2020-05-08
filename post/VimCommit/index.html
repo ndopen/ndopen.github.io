@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gridea | 脏乱差的小舍</title>
+<title>vim 命令 | 脏乱差的小舍</title>
 <meta name="description" content="点滴技术汇聚知识流" />
 <link rel="shortcut icon" href="https://ndopen.github.io/favicon.ico">
 <link rel="stylesheet" href="https://ndopen.github.io/styles/main.css">
@@ -14,11 +14,22 @@
 <script src="https://ndopen.github.io/media/js/view-image.min.js"></script>
 <script src="https://ndopen.github.io/media/js/jquery.magnific-popup.min.js"></script>
 <script src="https://ndopen.github.io/media/js/functions.js"></script>
+    <meta name="referrer" content="never">
+    <meta name="description" content="vi: Visual Interface 可视化接口
+vim: VI iMproved VI增强版
+全屏编辑器，模式化编辑器
+vim模式：
+编辑模式(命令模式)
+输入模式
+末行模式
+模式转换：
+编辑--&gt;输入：
+i: 在当前光标所在字..." />
+    <meta name="keywords" content="vim,liunx,commit" />
+    <script src="https://ndopen.github.io/media/js/waterfall.min.js"></script>
+    <script src="https://ndopen.github.io/media/js/prism.min.js"></script>
   </head>
   <body>
-    <!-- start: #wrapper -->
-    <div class="wrapper">
-      
             <header id="header" class="grid-container">
         <!-- start: .menu-wrapper -->
         <div class="menu-mobile"> 
@@ -79,45 +90,313 @@
         </div>
       </div>
 
-      <main id="home" class="main fullcover no-sidebar content">
-        <div class="grid-container module-wrapper enable-masonry aos-init aos-animate" data-aos="fade-up">
-        <div class="epcl-page-wrapper">
-          <div class="left-content grid-70 np-mobile widget_epcl_related_articles">
-                
-            <!-- start: .articles -->
-            <div class="main-article post">
-  <h2 class="year"># Gridea</h2>
-    
-      <article class="item default grid-33 tablet-grid-50 np-mobile">
-        <a href="https://ndopen.github.io/post/hello-gridea/" class="thumb hover-effect">
-          <span class="fullimage cover" style="display: block;background-image: url('https://ndopen.github.io/post-images/hello-gridea.png');"></span>
-        </a>
-        <div class="info gradient-effect">
-          <time datetime="2018-12-12">2018-12-12</time>
-          <h4 class="title usmall">
-            <a href="https://ndopen.github.io/post/hello-gridea/">Hello Gridea</a>
-          </h4>
-        </div>
-      </article>
+      <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
 
-    
-    <div class="clear"></div>
-</div>
-            <!-- end: .articles -->
-            
-                        <div class="epcl-pagination section">
-              <div class="nav">
-                
-                
-              </div>
+        <div class="center content">
+          <div class="featured-image cover" style="background-image: url('https://ndopen.github.io/post-images/VimCommit.png');">
+            <div class="meta top"> 
+              <time class="meta-info" style="float:left;" datetime="2020-05-08"><i class="fa fa-calendar"></i><span class="lately">3 分钟前</span></time>
+              
+              <a href="https://ndopen.github.io/post/VimCommit/#comments" class="comments meta-info" title="">
+                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/VimCommit/"> </span>
+              </a>
+              <span id="/VimCommit/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
+              
             </div>
+            <div class="info">
+              <div class="tags ">
+                
+                      <a href="https://ndopen.github.io/tag/DXtUobQC_/" class="ctag ctag-0 ctag-DXtUobQC_" aria-label="">vim</a>
+                    
+                      <a href="https://ndopen.github.io/tag/Y6Xk7Glgpp/" class="ctag ctag-1 ctag-Y6Xk7Glgpp" aria-label="">liunx</a>
+                    
+                      <a href="https://ndopen.github.io/tag/11TamN-JCP/" class="ctag ctag-2 ctag-11TamN-JCP" aria-label="">commit</a>
+                    
+              </div>
+              <h1 class="title ularge white bold">vim 命令</h1>
+            </div>
+          </div>
+        </div>  
+
+        <div class="epcl-page-wrapper">
+          <div class="left-content grid-70 np-mobile">
+            <article class="main-article post">
+              <section class="post-content">
+                <div class="text">
+                  <p>vi: Visual Interface 可视化接口<br>
+vim: VI iMproved VI增强版</p>
+<p>全屏编辑器，模式化编辑器</p>
+<p>vim模式：</p>
+<p>编辑模式(命令模式)<br>
+输入模式<br>
+末行模式<br>
+模式转换：</p>
+<p>编辑--&gt;输入：</p>
+<pre><code>i: 在当前光标所在字符的前面，转为输入模式；
+
+a: 在当前光标所在字符的后面，转为输入模式；
+
+o: 在当前光标所在行的下方，新建一行，并转为输入模式；
+
+I：在当前光标所在行的行首，转换为输入模式
+
+A：在当前光标所在行的行尾，转换为输入模式
+
+O：在当前光标所在行的上方，新建一行，并转为输入模式；
+</code></pre>
+<p>输入--&gt;编辑：</p>
+<pre><code>ESC
+</code></pre>
+<p>编辑--&gt;末行：</p>
+<pre><code>:
+</code></pre>
+<p>末行--&gt;编辑：</p>
+<pre><code>ESC, ESC
+</code></pre>
+<p>注：输入模式和末行模式之间不能直接切换<br>
+一、打开文件<br>
+vim +# :打开文件，并定位于第#行</p>
+<pre><code>vim +：打开文件，定位至最后一行
+
+vim +/PATTERN : 打开文件，定位至第一次被PATTERN匹配到的行的行首
+</code></pre>
+<p>注：默认处于编辑模式<br>
+二、关闭文件<br>
+1、末行模式关闭文件</p>
+<pre><code>:q  退出
+
+:wq 保存并退出
+
+:q! 不保存并退出
+
+:w 保存
+
+:w! 强行保存
+
+:wq --&gt; :x
+</code></pre>
+<p>2、编辑模式下退出</p>
+<p>ZZ: 保存并退出<br>
+三、移动光标(编辑模式)<br>
+1、逐字符移动：</p>
+<pre><code>h: 左
+
+l: 右
+
+j: 下
+
+k: 上
+
+#h: 移动#个字符
+</code></pre>
+<p>2、以单词为单位移动</p>
+<pre><code>w: 移至下一个单词的词首
+
+e: 跳至当前或下一个单词的词尾
+
+b: 跳至当前或前一个单词的词首
+
+#w: 移动#个单词
+</code></pre>
+<p>3、行内跳转：</p>
+<pre><code>0: 绝对行首
+
+^: 行首的第一个非空白字符
+
+$: 绝对行尾
+</code></pre>
+<p>4、行间跳转</p>
+<pre><code>#G：跳转至第#行
+
+gg: 第一行
+
+G：最后一行
+</code></pre>
+<p>5、末行模式</p>
+<pre><code>.: 表示当前行
+
+$: 最后一行
+
+#：第#行
+
++#: 向下的#行
+</code></pre>
+<p>四、翻屏<br>
+Ctrl+f: 向下翻一屏</p>
+<pre><code>Ctrl+b: 向上翻一屏
+
+Ctrl+d: 向下翻半屏
+
+Ctrl+u: 向上翻半屏
+</code></pre>
+<p>五、删除单个字符<br>
+x: 删除光标所在处的单个字符</p>
+<pre><code>#x: 删除光标所在处及向后的共#个字符
+</code></pre>
+<p>六、删除命令: d<br>
+d命令跟跳转命令组合使用</p>
+<pre><code>#dw, #de, #db
+</code></pre>
+<p>dd: 删除当前光标所在行<br>
+#dd: 删除包括当前光标所在行在内的#行；</p>
+<p>七、粘贴命令 p<br>
+p: 如果删除或复制为整行内容，则粘贴至光标所在行的下方，如果复制或删除的内容为非整行，则粘贴至光标所在字符的后面</p>
+<pre><code>P: 如果删除或复制为整行内容，则粘贴至光标所在行的上方，如果复制或删除的内容为非整行，则粘贴至光标所在字符的前面
+</code></pre>
+<p>八、复制命令 y<br>
+用法同d命令<br>
+九、修改：先删除内容，再转换为输入模式<br>
+c: 用法同d命令<br>
+十、替换：<br>
+r：单字符替换</p>
+<pre><code>#r: 光标后#个字符全部替换
+
+R: 替换模式
+</code></pre>
+<p>十一、撤消编辑操作 u<br>
+u：撤消前一次的编辑操作</p>
+<pre><code>#u: 直接撤消最近#次编辑操作
+
+连续u命令可撤消此前的n次编辑操作
+
+撤消最近一次撤消操作：Ctrl+r
+</code></pre>
+<p>十二、重复前一次编辑操作<br>
+.：编辑模式重复前一次编辑操作<br>
+十三、可视化模式<br>
+v: 按字符选取</p>
+<pre><code>V：按矩形选取
+</code></pre>
+<p>十四、查找<br>
+/PATTERN</p>
+<pre><code>?PATTERN
+
+n 下一个
+
+N 上一个
+</code></pre>
+<p>十五、查找并替换<br>
+在末行模式下使用s命令</p>
+<pre><code>headline,footlines#PATTERN#string#g
+
+1,$:表示全文
+
+%：表示全文
+</code></pre>
+<p>十六、使用vim编辑多个文件<br>
+vim FILE1 FILE2 FILE3</p>
+<pre><code>:next 切换至下一个文件
+
+:prev 切换至前一个文件
+
+:last 切换至最后一个文件
+
+:first 切换至第一个文件
+
+:q退出当前文件
+
+:qa 全部退出
+</code></pre>
+<p>十七、分屏显示一个文件<br>
+Ctrl+w, s: 水平拆分窗口</p>
+<pre><code>Ctrl+w, v: 垂直拆分窗口
+</code></pre>
+<p>在窗口间切换光标：</p>
+<pre><code>Ctrl+w, ARROW(h,j,k,l或方向键) 
+
+:qa 关闭所有窗口
+</code></pre>
+<p>十八、分窗口编辑多个文件<br>
+vim -o : 水平分割显示</p>
+<pre><code>vim -O : 垂直分割显示
+</code></pre>
+<p>十九、将当前文件中部分内容另存为另外一个文件<br>
+末行模式下使用w命令</p>
+<pre><code>:ADDR1,ADDR2w /path/to/somewhere
+</code></pre>
+<p>二十、将另外一个文件的内容填充在当前文件中<br>
+:r /path/to/somefile</p>
+<pre><code>附加到当前文件光标后
+</code></pre>
+<p>二十一、跟shell交互<br>
+:! COMMAND<br>
+二十二、高级话题<br>
+1、显示或取消显示行号</p>
+<pre><code>:set nu
+
+:set nonu
+
+mu = number
+</code></pre>
+<p>2、显示忽略或区分字符大小写</p>
+<pre><code>:set ic
+
+:set noic
+
+ic = ignorecase
+</code></pre>
+<p>3、设定自动缩进</p>
+<pre><code>:set ai
+
+:set noai
+
+ai = autoindent
+</code></pre>
+<p>4、查找到的文本高亮显示或取消</p>
+<pre><code>:set hlsearch
+
+:set nohlsearch
+</code></pre>
+<p>5、语法高亮</p>
+<pre><code>:syntax on
+
+:syntax off
+</code></pre>
+<p>注:特性当前有效，如果想要永久有效需修改配置文件<br>
+二十三、配置文件<br>
+/etc/vimrc    针对所有用户</p>
+<pre><code>~/.vimrc    针对当前用户</code></pre>
+
+                </div>
+                <div class="clear"></div>
+              </section>
+            </article>
+            <div class="clear"></div>
+
+            <section class="related section">
+              
+              
+              <article class="next grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('data:image/png;base64,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');"></div>
+                 <a href="https://ndopen.github.io/post/VagrantCommit/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2020-04-24">2020-04-24</time>
+                  <h4 class="title white no-margin">vagrant 命令查询</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://ndopen.github.io/media/images/right-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+
+                <div class="clear"></div>
+            </section>
+
+              <div class="clear"></div>
+              
             
+              <div id="comments" class="bg-white hosted ">
+                <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
+              </div>
+              <div class="clear"></div>
+            
+
+            </div>
           </div>
-          </div>
-        </div>
       </main>
 
-        <footer id="footer" class="grid-container">
+          <footer id="footer" class="grid-container">
         <div class="widgets row gradient-effect">
             <div class="default-sidebar border-effect">
               <div class="grid-33 tablet-grid-50 mobile-grid-100">
@@ -245,6 +524,9 @@
     <div class="clear"></div>
 
         
+
+      
+    <script src="https://ndopen.github.io/media/js/functions-post.js"></script>
 
     </div>
     <!-- end: #wrapper -->
